@@ -89,7 +89,7 @@ section #button_cover{
     display: flex;
     justify-content: center;
 }
-
+/*교내활동 버튼*/
 section #internal_button{
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -106,6 +106,7 @@ section #internal_button{
     height: 25px;
 }
 
+/*교외활동 버튼*/
 section #external_button{
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -127,6 +128,45 @@ section #buttons_bot{
     justify-content: right;
 }
 
+/*검색창*/
+.search_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    width: 200px;
+    height: 20px;
+}  
+
+.invisible{
+    display: none;
+}
+
+
+#suggestion_box {
+    margin-top: 1px;
+    background: white;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+
+#suggested_items{
+    height:100px;
+    width: 250px;
+    overflow: auto; /* 스크롤바 추가 */
+}
+
+/* 마우스 올리면 색 변화 */
+.item:hover{
+    color: #fff;
+    background-color: lightgreen;
+}
+
+
+/*write new 버튼*/
 section #write_button{
     font-family: 'Roboto', sans-serif;
     color:  #333;
