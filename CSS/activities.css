@@ -89,6 +89,7 @@ section #button_cover{
     display: flex;
     justify-content: center;
 }
+
 /*교내활동 버튼*/
 section #internal_button{
     font-family: 'Roboto', sans-serif;
@@ -128,17 +129,39 @@ section #buttons_bot{
     justify-content: right;
 }
 
+
 /*검색창*/
 .search_wrapper {
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /*column*/
     align-items: center;
     justify-content: center;
+
 }
 
+#name, #submit_button{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #FFF;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 1px solid #333;
+
+}
 #name {
-    width: 200px;
+    width: 300px;
     height: 20px;
+}  
+
+#submit_button {
+    width: 50px;
+    height: 32px;
 }  
 
 .invisible{
@@ -154,6 +177,8 @@ section #buttons_bot{
 }
 
 #suggested_items{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
     height:100px;
     width: 250px;
     overflow: auto; /* 스크롤바 추가 */
@@ -162,7 +187,7 @@ section #buttons_bot{
 /* 마우스 올리면 색 변화 */
 .item:hover{
     color: #fff;
-    background-color: lightgreen;
+    background-color: darkorange;
 }
 
 
@@ -229,36 +254,6 @@ section table #views{
     width: 150px;
     height: 40px;
 }
-/*
-footer{
-    width: 100%;
-    height: 50px;
-    clear: both;
-    background-color: #F3F3F3;
-    position: absolute;
-    left: 0px;
-    top: 671.2px;
-}
-
-footer .inner{
-    width: 1180px;
-    margin: 0px auto;
-    text-align: center;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 5px;
-    color: #666;
-}
-
-footer .inner #tel{
-    padding-top: 15px;
-    margin-bottom: 0px;  
-}
-
-footer .inner #copyright{
-    margin-top: 2px;
-}
-*/
 
 footer{
     width: 100%;
