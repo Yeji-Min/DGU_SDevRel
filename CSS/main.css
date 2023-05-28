@@ -274,21 +274,21 @@ section article .main_popworks .wrap .pic img{
     height: 100%;
 }
 
+/* footer */
 footer{
     width: 100%;
     height: 50px;
-    clear: both;
     background-color: #F3F3F3;
-    position: absolute;
-    left: 0px;
-    top: 671.2px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 footer .inner{
-    width: 1180px;
-    margin: 0px auto;
-    text-align: center;
     width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 5px;
     color: #666;
@@ -296,7 +296,7 @@ footer .inner{
 
 footer .inner #tel{
     padding-top: 15px;
-    margin-bottom: 0px;  
+    margin-bottom: 0;
 }
 
 footer .inner #copyright{

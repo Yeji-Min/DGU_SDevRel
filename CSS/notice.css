@@ -67,16 +67,17 @@ header {
     background-color: #555;
   }
 
-
+/*section*/
 section{
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 92.2px;
-    float: left;
-    width: 1410px;
-    height: 500px;
-    padding-left: 60px;
-    padding-top: 50px;
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 section #buttons{
@@ -188,7 +189,7 @@ section table #views{
     width: 150px;
     height: 40px;
 }
-
+/*
 footer{
     width: 100%;
     height: 50px;
@@ -212,6 +213,35 @@ footer .inner{
 footer .inner #tel{
     padding-top: 15px;
     margin-bottom: 0px;  
+}
+
+footer .inner #copyright{
+    margin-top: 2px;
+}
+*/
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #F3F3F3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer .inner{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5px;
+    color: #666;
+}
+
+footer .inner #tel{
+    padding-top: 15px;
+    margin-bottom: 0;
 }
 
 footer .inner #copyright{
