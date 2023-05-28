@@ -19,62 +19,54 @@ body{
     height: 100%;
 }
 
-header{
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-}
-
-header .main_menu{
-    width: 100%;
-    height: 20%;
-    position: relative;
-    display: inline-flex;
+/* navigation bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  nav.main_menu {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 1450px;
-    margin: 20px 0px;
-}
-
-header .main_menu h1{
-    display: inline;
-    padding: 0px 80px;
-}
-
-header .main_menu h1 a{
-    font-family: 'Abril Fatface', cursive;
-    font-size: 38px;
-    font-weight: lighter;
-    color: #0159B1;
-    text-decoration-line: none;
-}
-
-header .main_menu #gnb{
+    padding: 0 20px;
+  }
+  
+  nav.main_menu h1 {
+    margin: 0;
+  }
+  
+  nav.main_menu h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  ul.navbar {
     list-style-type: none;
-}
-
-header .main_menu #gnb li{
-    float: left;
-    margin-top: 5px;
-}
-
-header .main_menu #gnb #com{
-    color: #0159B1;
-}
-
-
-header .main_menu #gnb li a{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul.navbar li {
+    margin-right: 10px;
+  }
+  
+  ul.navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  ul.navbar li a {
     display: block;
-    font-family: 'Roboto', sans-serif;
-    color: #666;
-    padding: 10px 40px;
-    transition: all 0.5s;
-    text-decoration-line: none;
-}
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  ul.navbar li a:hover {
+    background-color: #555;
+  }
 
-header .main_menu #gnb li a:hover{
-    color: #0159B1;
-    font-weight: bold;
-    font-size: large;
-}
 
 section{
     position: absolute;
@@ -97,10 +89,10 @@ section #button_cover{
     justify-content: center;
 }
 
-section #free_button{
+section #common_button{
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    background-color: #0159B1;
+    background-color: #333;
     font-size: 13px;
     text-align: center;
     padding-top: 10px;
@@ -108,14 +100,14 @@ section #free_button{
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 10px;
-    border: 2px solid #0159B1;
+    border: 2px solid #333;
     width: 200px;
     height: 25px;
 }
 
-section #work_button{
+section #notice_button{
     font-family: 'Roboto', sans-serif;
-    color: #0159B1;
+    color: #333;
     background-color: #FFF;
     font-size: 13px;
     text-align: center;
@@ -124,7 +116,7 @@ section #work_button{
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 10px;
-    border: 2px solid #0159B1;
+    border: 2px solid #333;
     width: 200px;
     height: 25px;
 }
@@ -136,7 +128,7 @@ section #buttons_bot{
 
 section #write_button{
     font-family: 'Roboto', sans-serif;
-    color: #0159B1;
+    color:  #333;
     background-color: #FFF;
     font-size: 13px;
     text-align: center;
@@ -145,26 +137,26 @@ section #write_button{
     margin-top: 20px;
 
     margin-left: 10px;
-    border: 2px solid #0159B1;
+    border: 2px solid  #333;
     width: 200px;
     height: 25px;
 }
 
 section table{
     border-collapse: collapse;
-    border: 1px solid #0159B1;
+    border: 1px solid grey;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
 section table td{
-    border-top: 1px solid #0159B1;
-    color: #0159B1;   
+    border-top: 1px solid grey;
+    color: black;   
 }
 
 section table th{
-    background-color: #0159B1;
-    color: #FFF;
+    background-color: grey;
+    color: white;  
     font-weight: lighter;
 }
 
