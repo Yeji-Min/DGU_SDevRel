@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  nav.main_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  nav.main_menu h1 {
+    margin: 0;
+  }
+  
+  nav.main_menu h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul.navbar li {
+    margin-right: 10px;
+  }
+  
+  ul.navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  ul.navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  ul.navbar li a:hover {
+    background-color: #555;
+  }
+
+/*section*/
+section{
+    position: absolute;
+    left: 0;
+    top: 92.2px;
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+section #buttons{
+    display: flex;
+    justify-content: left;
+}
+
+section #button_cover{
+    display: flex;
+    justify-content: center;
+}
+
+section #professor_button{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #333;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    width: 200px;
+    height: 25px;
+}
+
+section #researcher_button{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #FFF;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    width: 200px;
+    height: 25px;
+}
+
+section #buttons_bot{
+    display: flex;
+    justify-content: right;
+}
+
+
+section table{
+    border-collapse: collapse;
+    border: 1px solid grey;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+#position1, #subject1, #number1, #major1, #email1, #lab1{
+    background-color: grey;
+    color: white;
+    width: 200px;
+    height: 40px;
+  }
+  
+#position2, #subject2, #number2, #major2, #email2, #lab2{
+    background-color: white;
+    color: grey;
+    width: 500px;
+    height: 40px;
+  }
+
+section table td{
+    border-top: 1px solid grey;
+    color: black;   
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #F3F3F3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer .inner{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5px;
+    color: #666;
+}
+
+footer .inner #tel{
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+footer .inner #copyright{
+    margin-top: 2px;
+}
