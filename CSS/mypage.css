@@ -69,13 +69,13 @@ header {
 
 
 
-
+/*프로필 뒷배경*/
 section{
     position: absolute;
     left: 0px;
     top: 92.2px;
     float: left;
-    width: 1536px;
+    width: 1440px;
     height: 500px;
 }
 
@@ -87,6 +87,7 @@ section .main_banner{
     position: relative;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     text-align: center;
     color: #FFF;
 }
@@ -141,6 +142,7 @@ section .main_banner .inner table #td_center, #th_center{
     border-right: 1px solid white;
 }
 
+/*프로필 사진*/
 section .profile_image{
     width: 220px;
     height: 220px;
@@ -156,33 +158,24 @@ section .profile_image img{
     object-fit: fill;
 }
 
-section article{
-    width: 100%;
-    padding: 20px 0px;
-}
-
-section article .main_popworks{
-    width: 100%;
-    margin: 0px;
-}
-
-section article .main_popworks #buttons{
+/*로그인 버튼*/
+section #buttons{
     display: flex;
     justify-content: left;
-    margin-left: 300px;
+    margin-left: 320px;
+    margin-top:220px;
 }
 
-section article .main_popworks #button_cover{
+section article #button_cover{
     display: flex;
     justify-content: center;
 }
 
-section article .main_popworks #my_button{
+section article #scrap_button{
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #FFF;
-
-    font-size: 15px;
+    color: #FFF;
+    background-color: #333;
+    font-size: 13px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 0px;
@@ -190,43 +183,42 @@ section article .main_popworks #my_button{
     margin-bottom: 40px;
     margin-right: 10px;
     border: 2px solid #333;
-    width: 200px;
+    width: 150px;
     height: 25px;
 }
 
-section article .main_popworks .wrap{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+
+/*마일리지 테이블*/
+article {
+    font-family: 'Roboto', sans-serif;
 }
+.mileage {
+    position: absolute;
+    left: 60px;
+    top: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size : 20px;
+  }
+  
+.mileage table {
+    width: 500px;
+    height: 100px;
+    border: 1px solid #333;
+  }
+  
+  .mileage td {
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid #333;
+  }
+  
+  .mileage .mileage-value {
+    color: darkorange;
+    font-weight: bold;
+  }
+  
 
-section article .main_popworks .wrap .pic{
-    width: 260px;
-    height: 260px;
-    float: left;
-    box-shadow: 2px 2px 2px #A0A0A0;
-    transition: all 0.5s;
-}
-
-section article .main_popworks .wrap .pic:hover{
-    width: 360px;
-    height: 260px;
-    float: left;
-    box-shadow: 2px 2px 2px #A0A0A0;
-}
-
-section article .main_popworks .wrap .pic:last-child{
-    margin-right: 0px;
-}
-
-
-section article .main_popworks .wrap .pic img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-/*footer*/
+/* footer */
 footer{
     width: 100%;
     height: 50px;

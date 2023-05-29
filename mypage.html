@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/9d9d67d672.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/mypage.css">
     <script defer src="js/ie.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap');
@@ -17,7 +18,7 @@
     </style>
 
 </head>
-<body>
+<br>
     <header>
         <nav class="main_menu">
             <h1>
@@ -39,8 +40,8 @@
         <figure class="main_banner">
             <div class="inner">
                 <table>
-                    <tr><th>ART WORKS</th><th id="th_center">FOLLOWING</th><th>FOLLOWERS</th></tr>
-                    <tr><td>4</td><td id="td_center">12</td><td>9</td></tr>
+                    <tr><th>스크랩</th><th id="th_center">게시글</th><th>이웃</th></tr>
+                    <tr><td>14</td><td id="td_center">8</td><td>9</td></tr>
                 </table>
                 <h1>찌람(jjrm)</h1> 
             </div>
@@ -49,38 +50,49 @@
         <figure class="profile_image">
             <img src="img/user.png">
         </figure>
+    </section>
 
-        <article>
-            <div class="main_popworks">
-
-                <div id="buttons">
-                    <div id="button_cover"><a href="./login.html" #target="_blank" id="my_button">새로운 계정으로 로그인하기</a></div>
-                </div>
-
-                <div class="wrap">
-                    <div class="pic">
-                        <img src="img/popanimal_1.jpg" alt="인기 작품 1" onclick="javascript:alert('Title : Dog\nTag : animal, cute\nStory : This is my dog')">
-                    </div>
-                    <div class="pic">
-                        <img src="img/popanimal_2.jpg" alt="인기 작품 2" onclick="javascript:alert('Title : Dog2\nTag : animal, cute\nStory : This is my dog2')">
-                    </div>
-                    <div class="pic">
-                        <img src="img/popanimal_3.jpg" alt="인기 작품 3" onclick="javascript:alert('Title : Parrot\nTag : animal, cute\nStory : This is my parrot')">
-                    </div>
-                    <div class="pic">
-                        <img src="img/popanimal_4.jpg" alt="인기 작품 4" onclick="javascript:alert('Title : Rabbit\nTag : animal, cute\nStory : This is my rabbit')">
-                    </div>
-                </div>
+    <section>
+        <article>  
+            <div id="buttons">
+                <div id="button_cover"><a href="./login.html" id="scrap_button">다른 계정으로 로그인하기</a></div>
             </div>
+
+            <div class="mileage">
+                <table>
+                    <h2>마일리지</h2>
+                  <tr>
+                    <td><strong>마일리지<br><span class="mileage-value">472P</span></strong></td>
+                    <td><strong>사용 가능 마일리지    <span class="mileage-value">472P</span><br>총 획득 마일리지    <span class="mileage-value">472P</span></strong></td>
+                  </tr>
+                </table>
+                <br>
+                <a href="javascript:void(0)" onclick="showMileagePolicy()">마일리지 정책</a>
+
+                <script>
+                function showMileagePolicy() {
+                    var message = "하루 1회 로그인하면 1점 적립,\n오픈 강의 개설 / 등록 시 100점 적립,\n획득 마일리지는 1년 안에 미사용 시 소멸됨";
+                    var policyList = message.split(",\n");
+                    var formattedMessage = "";
+                    for (var i = 0; i < policyList.length; i++) {
+                    formattedMessage += "- " + policyList[i] + "\n";
+                    }
+                    alert(formattedMessage);
+                }
+                </script>
+            </div>
+            <br>
         </article>
     </section>
+    
+
     <footer>
         <div class="inner">
             <p id="tel">
-                TEL) 02-123-4567
+                TEL 02-2290-1399 | 서울특별시 중구 필동로 1길 30 동국대학교 SW교육원(정보문화관 P306호) | 04620
             </p>
             <p id="copyright">
-               COPYRIGHT (C) 2022 WEARTIST. ALL RIGHTS RESERVED
+               COPYRIGHT (C) 2021 BY DONGGUK Student DevRel. ALL RIGHT RESERVED.
             </p>
         </div>
     </footer>
