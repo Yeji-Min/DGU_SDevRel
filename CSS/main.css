@@ -80,42 +80,6 @@ header {
   }
 
 
-aside{
-    width: 200px;
-    height: 579px;
-    position: absolute;
-    left: 0px;
-    top: 92.2px;
-    background: #0159B1;
-    font-family: 'Roboto', sans-serif;
-}
-
-aside #aside_title{
-    font-size: 20px;
-    color: #fff;
-    border-bottom: 1.5px solid #ddd;
-    margin: 10px 5px;
-    padding: 10px 10px;
-}
-
-aside .main_followers #name{
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    padding: 5px 10px;
-}
-
-aside .main_followers #name a{
-    text-decoration-line: none;
-    text-decoration-color: none;
-}
-
-
-aside .main_followers img{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
 
 section{
     position: absolute;

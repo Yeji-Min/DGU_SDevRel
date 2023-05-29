@@ -158,6 +158,14 @@ section .profile_image img{
     object-fit: fill;
 }
 
+section .profile_image:hover{
+    width: 230px;
+    height: 230px;
+    float: left;
+    box-shadow: 2px 2px 2px #A0A0A0;
+}
+
+
 /*로그인 버튼*/
 section #buttons{
     display: flex;
