@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  nav.main_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  nav.main_menu h1 {
+    margin: 0;
+  }
+  
+  nav.main_menu h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul.navbar li {
+    margin-right: 10px;
+  }
+  
+  ul.navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  ul.navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  ul.navbar li a:hover {
+    background-color: #555;
+  }
+
+
+
+
+section{
+    position: absolute;
+    left: 0px;
+    top: 92.2px;
+    float: left;
+    width: 1536px;
+    height: 500px;
+}
+
+section .main_banner{
+    width: 100%;
+    height: 200px;
+    background: grey;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #FFF;
+}
+
+section .main_banner .inner h1{
+    position: absolute;
+    left: 300px;
+    top: 140px;
+    z-index: 3;
+    font-size: 45px;
+}
+
+section .main_banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+section .main_banner .inner{
+    width: 100%;
+    padding-top: 25px;
+    position: relative;
+}
+
+section .main_banner .inner table{
+    margin-left: 800px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+section .main_banner .inner table th{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: lighter;
+    
+}
+
+section .main_banner .inner table td{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+section .main_banner .inner table #td_center, #th_center{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+section .profile_image{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+    top: 60px;
+}
+
+section .profile_image img{
+    width: 220px;
+    height: 220px;
+    object-fit: fill;
+}
+
+section article{
+    width: 100%;
+    padding: 20px 0px;
+}
+
+section article .main_popworks{
+    width: 100%;
+    margin: 0px;
+}
+
+section article .main_popworks #buttons{
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+}
+
+section article .main_popworks #button_cover{
+    display: flex;
+    justify-content: center;
+}
+
+section article .main_popworks #my_button{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #FFF;
+
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    width: 200px;
+    height: 25px;
+}
+
+section article .main_popworks .wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section article .main_popworks .wrap .pic{
+    width: 260px;
+    height: 260px;
+    float: left;
+    box-shadow: 2px 2px 2px #A0A0A0;
+    transition: all 0.5s;
+}
+
+section article .main_popworks .wrap .pic:hover{
+    width: 360px;
+    height: 260px;
+    float: left;
+    box-shadow: 2px 2px 2px #A0A0A0;
+}
+
+section article .main_popworks .wrap .pic:last-child{
+    margin-right: 0px;
+}
+
+
+section article .main_popworks .wrap .pic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #F3F3F3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer .inner{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5px;
+    color: #666;
+}
+
+footer .inner #tel{
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+footer .inner #copyright{
+    margin-top: 2px;
+}

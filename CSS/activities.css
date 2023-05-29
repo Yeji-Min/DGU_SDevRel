@@ -201,7 +201,6 @@ section #write_button{
     padding-top: 10px;
     padding-bottom: 0px;
     margin-top: 20px;
-
     margin-left: 10px;
     border: 2px solid  #333;
     width: 200px;
@@ -255,6 +254,7 @@ section table #views{
     height: 40px;
 }
 
+/*footer*/
 footer{
     width: 100%;
     height: 50px;

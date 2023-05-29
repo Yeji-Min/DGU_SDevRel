@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Dongguk DevRel</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9d9d67d672.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/mypage.css">
     <script defer src="js/ie.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Roboto&display=swap');
     </style>
+
 </head>
 <body>
     <header>
@@ -34,25 +35,28 @@
         </nav>
     </header>
     
-    <!-- <aside>
-        <div id="aside_title">
-            Followers
-        </div>
-        <table class="main_followers">
-            <tr><td><a href="./profile_user1.html"><img src="img/user.png"></a></td><td id="name">user1</td></tr>
-            <tr><td><a href="#"><img src="img/user.png"></a></td><td id="name">user2</td></tr>
-            <tr><td><a href="#"><img src="img/user.png"></a></td><td id="name">user3</td></tr>
-        </table>
-    </aside> -->
-
-    <figure class="main_banner">
-        <img src="img/main_banner.jpg">
-    </figure>
-
     <section>
+        <figure class="main_banner">
+            <div class="inner">
+                <table>
+                    <tr><th>ART WORKS</th><th id="th_center">FOLLOWING</th><th>FOLLOWERS</th></tr>
+                    <tr><td>4</td><td id="td_center">12</td><td>9</td></tr>
+                </table>
+                <h1>찌람(jjrm)</h1> 
+            </div>
+        </figure>
+
+        <figure class="profile_image">
+            <img src="img/user.png">
+        </figure>
+
         <article>
             <div class="main_popworks">
-                <h1>Popular Art Works</h1>
+
+                <div id="buttons">
+                    <div id="button_cover"><a href="./login.html" #target="_blank" id="my_button">새로운 계정으로 로그인하기</a></div>
+                </div>
+
                 <div class="wrap">
                     <div class="pic">
                         <img src="img/popanimal_1.jpg" alt="인기 작품 1" onclick="javascript:alert('Title : Dog\nTag : animal, cute\nStory : This is my dog')">
@@ -69,15 +73,14 @@
                 </div>
             </div>
         </article>
-        
     </section>
     <footer>
         <div class="inner">
             <p id="tel">
-                TEL 02-2290-1399 | 서울특별시 중구 필동로 1길 30 동국대학교 SW교육원(정보문화관 P306호) | 04620
+                TEL) 02-123-4567
             </p>
             <p id="copyright">
-               COPYRIGHT (C) 2021 BY DONGGUK Student DevRel. ALL RIGHT RESERVED.
+               COPYRIGHT (C) 2022 WEARTIST. ALL RIGHTS RESERVED
             </p>
         </div>
     </footer>
